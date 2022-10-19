@@ -391,3 +391,77 @@ aside img
 {
     border-bottom: 1px solid;
 }
+
+
+
+
+.cards ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.cards .cards-item{
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin-top: 40px;
+}
+
+.cards img{
+    max-width: 100%;
+}
+
+.cards-item h3
+{
+    position: absolute;
+    top:0;
+    opacity: 0;
+}
+
+.cards-item p
+{
+    position: absolute;
+    top:50%;
+    opacity: 0;
+}
+
+.cards-item::before
+{
+    content:'';
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(222, 212, 212);
+    opacity: 0;
+    transition: all .9s;
+    transform: scale(0);
+    transform: rotate(45deg);
+
+}
+
+.cards-item:hover:before
+{
+    opacity: 0.5;
+    transform: scale(1);
+    transform: rotate(0);
+}
+
+.cards-item:hover h3
+{
+    opacity: 1;
+    color: black;
+}
+
+.cards-item:hover p
+{
+    opacity: 1;
+    color: black;
+    font-weight: bolder;
+}
