@@ -8,6 +8,11 @@
     height: 100vh;
 }
 
+body
+{ 
+    background-color: black;
+}
+
 .butt{
    
     text-decoration: none;
@@ -27,8 +32,7 @@
 {
     width: 250px;
     height: 60px;
-    border: 3px solid orange;
-    border-radius: 15px;
+    border: 1px solid orange;
     line-height: 60px;
     color: orange;
 }
@@ -160,29 +164,113 @@
 
 
 
-
-.card-list
+/* -------------------------------------Кнопка3------------------------------------ */
+.butt3
 {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    font-size: 0;
-    margin-top: 30px;
-    justify-content: space-between;
+    width: 250px;
+    height: 60px;
+    border: 3px solid red;
+    line-height: 60px;
+    color: red;
+    border-radius: 10px;
 }
 
 
-.cards-item{
-    display: block;
-    flex: 20%;
-    overflow: hidden;
-    position: relative;
-    margin:25px;
+.butt3::before
+{
+    position:absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    opacity: .5;
+    transition: .1s;
+    z-index:-1;
+    left: 0;
+    top:-100%;
+    border-radius: 10px;
+    background: orangered;
+    opacity: 0;
+    transform: rotate(90deg);
 }
 
-.cards-item img{
-    max-width: 100%;
-    height: auto;
-    transition: all .5s ease;
+.butt3:hover::before
+{
+    top:0;
+    transform: scale(1);
+    opacity: 1;
 }
+
+.butt3::after
+{
+    position:absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    transition: 1s;
+    z-index:-1;
+    right:-100%;
+    background: white;
+}
+
+
+
+.butt3:hover::after
+{
+   right: 100%;
+}
+
+
+.butt3:hover{
+    color:white;
+
+}
+
+/* ----------------------------------------кнопка4---------------------------------------------------- */
+
+.butt4
+{
+    width: 250px;
+    height: 60px;
+    border: 3px solid blue;
+    line-height: 60px;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.butt4::before
+{
+    position:absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: .1s;
+    z-index:-1;
+    left: 0;
+    top:0;
+    background-color: blue;
+}
+
+
+.butt4:hover::before
+{
+    top:0;
+    transform: scale(0) rotate(-45deg);
+    opacity: .5;
+    background: transparent;
+    transition: .6s;
+}
+
+.butt4:hover
+{
+    color: blue;
+}
+
+
+
+
+
+
