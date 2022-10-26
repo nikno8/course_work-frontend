@@ -121,10 +121,7 @@ body{
 .box span::before {
     content: '';
     position: absolute;
-    /* top: 0;
-    left: 0;
-    width: 0;
-    height: 0; */
+    display: none;
     top: -40px;
     left: 40px;
     width: 50px;
@@ -142,6 +139,7 @@ body{
    
 .box span::after {
     content: '';
+    display: none;
     position: absolute;
     bottom: -40px;
     right: 40px;
@@ -150,19 +148,13 @@ body{
     opacity: 1;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
     transition: 0.5s;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     animation-delay: -1s;
 }
    
-.box span:after {
-    bottom: -40px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
-    opacity: 1;
-}
+
    
 .box .content {
     position: relative;
@@ -185,5 +177,26 @@ body{
     font-size: 20px;
     color: #fff;
     margin-bottom: 10px;
+}
+
+.box:hover>span::after
+{
+    display: block;
+    animation: square_login 10s;
+}
+
+.box:hover>span::before
+{
+    display: block;
+    animation: square_login 10s;
+}
+
+@keyframes square_login {
+    0%, 100%{
+        transform: translateY(-2rem);
+    }
+    50%{
+        transform: translateY(2rem);
+    }
 }
    
