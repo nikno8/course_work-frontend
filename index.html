@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type = "image.png" href="img/logo.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <title>Мир кино</title>
 </head>
 <body>
@@ -26,11 +27,8 @@
                         <li class="menu-item">
                             <a href="gallery.html" class="menu__link">Галерея</a>
                         </li>
-                        <!-- <li class="menu-item">
-                            <a href="" class="menu__link">Раздел 3</a>
-                        </li> -->
                         <li class="menu-item">
-                            <a href="" class="menu__link">Описание жанров</a>
+                            <a href="#Description" class="menu__link">Описание жанров</a>
                         </li>
                         <li class="menu-item">
                             <a href="#footer" class="menu__link">Контактная информация</a>
@@ -43,8 +41,22 @@
     <main class="page">
         <div class="page__main-block main-block">
             <div class="main-block__container _container">
+                <div class="notification">
+                    <i class="fa fa-bell"></i>
+                    <div class="indicator">3</div>
+                    <div class="notif-block">
+                        <ul class="notifications-content">
+                            <li class="notif-content">Ваш электронный билет на сеанс</li>
+                            <li class="notif-content">Обновление афиши</li>
+                            <li class="notif-content">Узнать о новинках!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="corleone-wrapper">
                     <img class="corleone" src="img/pic10.jpg" width="auto"
                     alt="Крестный отец требует уважения">
+                </div>
+                
                 <aside>
                     <img src="https://exiterra.com/upload/resize_cache/webp/blog/images/78-primerov-kreativnoy-reklamy/064.webp">
                 </aside>
@@ -88,12 +100,35 @@
                         </dd>
                     </dl>
                 </section>
-                    <div class="flex-wrapper">
-                        <iframe class="widget" frameborder="0" width="500px" height="400px" src="https://festagent.com/ru/widgets/festivals/?limit=5&named_runtime=feature"> </iframe>
-                        <img src="img/pic11.jpg" class="mans" >
-                    </div>
-                  
-            </div>
+                <div class="flex-wrapper">
+                    <iframe class="widget" frameborder="0" width="500px" height="400px" src="https://festagent.com/ru/widgets/festivals/?limit=5&named_runtime=feature"> </iframe>
+                    <img src="img/pic11.jpg" class="mans" >
+                </div>
+                
+                <div class="cards">
+                    <ul>
+                        <li class="cards-item">
+                            <h3>Бойцовский клуб</h3>
+                            <p>Экранизация романа Чака Поланика с Брэддом Питтом и Эдвардом Нортоном</p>
+                            <a href="#">Подробнее</a><img src="img/pic1.jpg" alt="">
+                        </li>
+                        <li class="cards-item">
+                            <h3>Джанго освобожденный</h3>
+                            <p>Метко шутя и стреляя, охотники за головами уничтожают негодяев. Квентин Тарантино пробует силы в вестерне</p>
+                            <a href="#">Подробнее</a><img src="img/pic2.jpg" alt="">
+                        </li>
+                        <li class="cards-item">
+                            <h3>Брат 2</h3>
+                            <p>Культовый фильм Алексея Балабанова: продолжение приключений Данилы Багрова в Москве</p>
+                            <a href="#">Подробнее</a><img src="img/pic3.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="video-wrapper">
+                    <video class="video-item" src="videos/Почему «Зеленая миля» — фильм № 1 на Кинопоиске.mp4" controls poster="img/pic12.jpg"></video>
+                    <h3>Зеленая миля</h3>
+                    <p>Зеленая Миля. Мистическая драма по одноименному роману Стивена Кинга.
+                    Секретом своей жизни с нами делится один из обитателей дома престарелых – Пол Эджкомб.</p>
+                </div>
         </div>
     </main>
     <footer class="footer">
