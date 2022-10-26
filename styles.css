@@ -438,34 +438,8 @@ aside img
     transform: translate(0,-70px);
     border-radius: 50%;
     transition: all 0.3s ease-in;
-
+    background: linear-gradient(315deg, #ffbc00, #ff0058)  
 }
-
-.social__icon.instagram::before
-{
-    background: linear-gradient(315deg, purple,blue)
-}
-
-.social__icon.facebook::before
-{
-    background: linear-gradient(315deg, purple,blue)
-}
-
-.social__icon.git::before
-{
-    background: linear-gradient(315deg, purple,blue)
-}
-
-.social__icon.twitter::before
-{
-    background: linear-gradient(315deg, purple,blue)
-}
-
-.social__icon.linkedin::before
-{
-    background: linear-gradient(315deg, purple,blue)
-}
-
 
 
 .social__icon:hover
