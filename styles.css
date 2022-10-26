@@ -294,14 +294,14 @@ body{
 }
 .corleone
 {
-    /* margin-top: 120px; */
+    margin-top: 120px;
     border-radius: 40px;
     height: auto;
     width: inherit;
     margin-bottom: 30px;  
 }
 
-.notif-wrapper
+/* .notif-wrapper
 {
     width:100%;
     margin-top: 120px;
@@ -359,6 +359,101 @@ li.notification-item:hover
 {
     opacity: .4;
     background-size: 100%;
+} */
+.notification {
+    transition: height 1s, width 0.85s, border-radius 1.5s;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    font-size: x-large;
+    background-color: white;
+    border: 1px solid grey;
+    position: fixed;
+    top: 0.5%;
+    right: 1%;
+    z-index: 10000000000;
+}
+    
+.notification:hover {
+    transition: height 1s, width 0.85s, border-radius 0.4s;
+    border-radius: 25px;
+    height: 110px;
+    width: 245px;
+}
+    
+.notification i {
+    transition: font-size 1.2s, margin 0.5s;
+    display: block;
+    color: black;
+    margin-top: 10px;
+    margin-left: .8rem;
+}
+    
+.notification:hover i {
+    transition: font-size 1.2s, margin 0.5s;
+    font-size: medium;
+    margin-top: 0.7rem;
+    margin-left: 1.5rem;
+    margin-bottom: .4rem;
+}
+    
+.notifications-content {
+    transition: color 0.2s ease-out;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 3px;
+    color:transparent;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+    
+.notif-block {
+    margin-top: 4px;
+    height: 4rem;   
+}
+
+.notif-block:hover {
+    overflow-y: scroll;
+}
+    
+.notification:hover .notifications-content {
+    transition: color 1.5s ease-in 0.3s;
+    color: black;
+    font-weight: bold;
+}
+    
+.notif-content {   
+    overflow-x: hidden;
+    padding: 5px;
+    font-size: small;
+}
+    
+.notif-content:hover {
+    border-radius: 25px;
+    background-color: rgba(220, 220, 220, 0.652);
+}
+    
+.indicator {
+    transition: transform 0.5s;
+    position: fixed;
+    font-size: x-small;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: 0.9%;
+    right: 1.1%;
+    padding-top: 3px;
+    text-align: center;
+    color: white;
+    background-color: rgb(210, 31, 31);
+}
+    
+.notification:hover .indicator {
+    transition: transform 0.5s;
+    transform: scale(1.05);
 }
 
 
@@ -524,6 +619,11 @@ aside img
     transform: rotate(0);
 }
 
+.cards-item:hover{
+    transform: translateY(-15px);
+    transition: 1.2s ease-in-out;
+}
+
 .cards-item:hover h3
 {
     opacity: 1;
@@ -553,7 +653,6 @@ aside img
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
-    /* width: 600px; */
     position: relative;
     /* text-align: center; */
 }
@@ -592,19 +691,20 @@ aside img
 .video-wrapper:hover::before
 {
     background-color: black;
-    transition: .7s;
+    transition:.6s;
     opacity: 1;
-    width: 80%;
+    width: 100%;
     height: 80%;
-    left: 30%;
+    left: 10%;
     top:10%;
     z-index: 50;
 }
 
 .video-wrapper:hover h3
 {
+    transition: .7s;
     top:30%;
-    left: 35%;
+    left: 15%;
     z-index: 99;
     opacity: 1;
 }
@@ -612,7 +712,7 @@ aside img
 .video-wrapper:hover p
 {
     top:40%;
-    left: 40%;
+    left: 20%;
     z-index: 99;
     opacity: 1;
 }
