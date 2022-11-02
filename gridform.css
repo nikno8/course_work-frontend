@@ -1,9 +1,7 @@
 .form__container
 {
     margin: 0 auto;
-}
-.form__container {
-    padding: 1rem;
+    padding: 4rem;
     background-color: black;
     color:white;
 }
@@ -24,19 +22,19 @@
     font-size: 2rem;
 }
 .form__text {
+    outline: none;
+    border: none;
     font-size: 1.5rem;
     color: white;
     width: 100%;
     padding: 0.5rem 1rem;
-    outline: none;
-    border: none;
     background-color: black;
-    border-top: 2px solid #092e37;
+    border-top: 2px solid #27cdf5;
 }
 .form__text:focus {
     background-color: #27cdf5;
 }
-.form__long_text {
+.message_text {
     grid-column: span 2;
 }
 .button{
@@ -52,7 +50,7 @@
     .form{
         grid-template-columns: 1fr;
     }
-    .form__long_text {
+    .message_text {
         grid-column: span 1;
     }
 }
@@ -61,7 +59,7 @@
     .form{
         grid-template-columns: 1fr;
     }
-    .form__long_text {
+    .message_text {
         grid-column: span 1;
     }
 }
