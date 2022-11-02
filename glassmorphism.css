@@ -70,7 +70,7 @@ body{
     border-radius: 8px;
     transform: skewX(15deg);
     transition: 0.5s;
-   }
+}
    
 .box::after {
     content: '';
@@ -115,7 +115,6 @@ body{
     right: 0;
     bottom: 0;
     z-index: 5;
-    pointer-events: none;
 }
    
 .box span::before {
