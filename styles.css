@@ -639,7 +639,7 @@ aside img
 
 
 /* --------------------------------------------Footer------------------------------------------------- */
-.footer{
+/* .footer{
     background-color: black;
     color:inherit;
     font-family: Montserrat;
@@ -723,4 +723,118 @@ aside img
 
 .social__icon:hover::before{
     transform: translate(0);
+} */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* -----------------------------------------footer-grid----------------------------------------------- */
+
+
+.footer {
+    color: white;
+    display: grid;
+    padding: 1rem 4rem;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+    grid-area: footer;
+}
+
+.social
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__icon
+{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black;
+    transition: all 0.3s ease-in;
+    position: relative;
+    overflow: hidden;
+}
+
+.social__icon i
+{
+    font-size: 20px;
+    color: rgb(125, 119, 119);
+    transition: all 0.3s ease-in;
+    z-index: 1;
+}
+
+.social__icon::before
+{
+    content: '';
+    width: 70px;
+    height: 70px;
+    position:absolute;
+    transform: translate(0,-70px);
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+    background: linear-gradient(315deg, #ffbc00, #ff0058)  
+}
+
+
+.social__icon:hover
+{
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 25px white;
+}
+
+.social__icon:hover i{
+    color:white;
+}
+
+.social__icon:hover::before{
+    transform: translate(0);
+} 
+
+.title-h3::before{
+    content: '';
+    position: absolute;
+    height: 0.2rem;
+    width: 8rem;
+    top: 100%;
+    left: 0;
+    background-color:white;
+}
+
+.footer ul li a{
+    color: white;
+}
+
+.footer .title-h3
+{
+    position: relative;
+}
+
+
+.footer ul li{
+    margin: 0.5rem 0;
+}
+
+@media (max-width:992px) {
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .footer{
+        grid-template-columns: 1fr;
+    }
 }
