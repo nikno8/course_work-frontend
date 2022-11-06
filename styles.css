@@ -809,7 +809,7 @@ aside img
 .title-h3::before{
     content: '';
     position: absolute;
-    height: 0.2rem;
+    height: 0.1rem;
     width: 8rem;
     top: 100%;
     left: 0;
