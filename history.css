@@ -71,6 +71,7 @@ body{
     width: 100%;
     z-index: 99;
     background: black;
+    margin-bottom: rem;
 }
 
 .header__container {
@@ -199,7 +200,6 @@ body{
         left: 0;
         transition: all, .5s;
         visibility: hidden;
-
     }
 
     #checkbox_toggle:checked ~ .menu__list
@@ -214,6 +214,7 @@ body{
         width: 100%;
         z-index: 1000;
         background-color: #000 ;
+
 
     }
 
@@ -272,18 +273,10 @@ body{
     margin:0;
 }
 
-.main_picture_wrapper
+.main-block__container
 {
     margin-top: 10em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;  
-}
-.main_picture
-{
-    height: 300px;
-    width: 300px;
+    margin-bottom: 10em;
 }
 
 
@@ -304,7 +297,7 @@ aside img
     margin-top: 20px;
     margin-right:20px;
     float: right;
-    width: 20%;
+    width: 40%;
     margin-left:50px;
     border-radius: 20px;
 }
@@ -353,173 +346,6 @@ aside img
 
 
 
-.cards ul{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-.cards .cards-item{
-    width: 500px;
-    height: auto;
-    position: relative;
-    margin-top: 40px;
-}
-
-.cards img{
-    max-width: 100%;
-}
-
-.cards-item h3
-{
-    position: absolute;
-    top:0;
-    opacity: 0;
-}
-
-.cards-item p
-{
-    position: absolute;
-    top:50%;
-    opacity: 0;
-}
-
-.cards-item a
-{
-    position: absolute;
-    top:80%;
-    left: 5%;
-    border: 1px solid black;
-    padding: 6px;
-    text-decoration: none;
-    color: black;
-    opacity: 0;
-}
-
-.cards-item::before
-{
-    content:'';
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(222, 212, 212);
-    opacity: 0;
-    transition: all .9s;
-    transform: scale(0);
-    transform: rotate(45deg);
-
-}
-
-.cards-item:hover:before
-{
-    opacity: 0.5;
-    transform: scale(1);
-    transform: rotate(0);
-}
-
-.cards-item:hover{
-    transform: translateY(-15px);
-    transition: 1.2s ease-in-out;
-}
-
-.cards-item:hover h3
-{
-    opacity: 1;
-    color: black;
-}
-
-.cards-item:hover p
-{
-    opacity: 1;
-    color: black;
-    font-weight: bolder;
-}
-
-.cards-item:hover a
-{
-    opacity: 1;
-    z-index: 2;
-    font-weight: bold;
-}
-
-
-
-
-/* ---------------------video--------------------------- */
-.video-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    position: relative;
-    /* text-align: center; */
-}
-
-.video-wrapper h3 {
-    position: absolute;
-    color: orange;
-    font-weight: bold;
-    opacity: 0;
-}
-
-.video-wrapper p {
-    position: absolute;
-    color: orange;
-    font-weight: bold;
-    opacity: 0;
-}
-
-.video-item {
-    width: inherit;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-
-.video-wrapper::before
-{
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -50%;
-}
-
-.video-wrapper:hover::before
-{
-    background-color: black;
-    transition:.6s;
-    opacity: 1;
-    width: 100%;
-    height: 80%;
-    left: 10%;
-    top:10%;
-    z-index: 50;
-}
-
-.video-wrapper:hover h3
-{
-    transition: .7s;
-    top:30%;
-    left: 15%;
-    z-index: 99;
-    opacity: 1;
-}
-
-.video-wrapper:hover p
-{
-    top:40%;
-    left: 20%;
-    z-index: 99;
-    opacity: 1;
-}
 
 
 
