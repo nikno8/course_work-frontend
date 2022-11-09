@@ -71,6 +71,16 @@
     background: url(/img/titanic.jpg) no-repeat;
 }
 
+.year_2009
+{
+    background: url(/img/avatar.jpg) no-repeat;
+}
+
+.year_2019
+{
+    background: url(/img/joker.png) no-repeat;
+}
+
 
 .year
 {
@@ -81,6 +91,8 @@
     font-weight: bolder;
     font-size: larger;
 }
+
+
 
 .year::before
 {
@@ -93,6 +105,10 @@
     z-index: -1;
     border-radius: 1em;
     background-color:rgba(63, 60, 60, 0.352);
+}
+
+.year-2009::before{
+    right:-45px;
 }
 
 
@@ -134,6 +150,8 @@
     z-index: 2;
     margin-left:1em;
     margin-top: 0.5em;
+    align-self: center;
+    margin-bottom:1em;
 }
 
 
