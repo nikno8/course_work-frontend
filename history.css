@@ -1,277 +1,3 @@
-/* Обнуление */
-
-a{
-    text-decoration: none;
-}
-
-*,
-::before,
-::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    border: 0;
-}
-
-
-li,
-ol,
-ul{
-    list-style: none;
-}
-
-img{
-    vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-    font-style: Montserrat;
-}
-
-
-html,
-body{
-    height: 100%;
-    line-height: 1;
-    font-size:14px;
-    color:#000;
-    color:white;
-    font-weight: 400;
-    font-family: Montserrat;
-}
-
-.wrapper
-{
-    overflow: hidden;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-._container
-{
-    max-width: 1046px;
-    margin:0 auto;
-    box-sizing: content-box;
-    padding: 0 15px;
-
-
-}
-
-/* --------------------------------------------ШАПКА-------------------------------------------- */
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    background: black;
-    margin-bottom: rem;
-}
-
-.header__container {
-    display: flex;
-    min-height: 104px;
-    align-items: center;
-}
-
-.header__logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: inherit;
-}
-.header__menu {
-    margin: 0px 0px 0px 300px;
-}
-
-@media (max-width: 992px) {
-    .header__menu {
-        margin: 0px 0px 0px 80px;
-    }
-}
-
-@media (max-width: 479px) {
-    .header__menu {
-        margin: 0px 0px 0px 20px;
-    }
-}
-
-@media (max-width: 767px) {
-    .header__menu {
-        margin: 0px 0px 0px 50px;
-    }
-}
-
-.menu {
-    /* отступ безопасности */
-    padding: 5px 0; 
-}
-
-
-.menu__list {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-.menu-item:not(:last-child) {
-    margin: 0px 21px 0px 0px;
-
-}
-.menu__link {
-    color:white;
-    line-height: calc(24/14*100%);
-}
-
-.menu__list li a:hover{
-    background-color:orange;
-}
-
-/* -------------------------------------------Бургер----------------------------------------------- */
-#checkbox_toggle
-{
-    display: none;
-}
-
-.hamburger{
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-}
-
-.hamburger-line
-{
-    background-color: white;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 26px;
-}
-
-
-.hamburger-line::before,
-.hamburger-line::after
-{
-    content: '';
-    background-color: white;
-    display: block;
-    position: absolute;
-    transition: all .3s;
-    width: 100%;
-    height: 100%;
-
-}
-
-.hamburger-line::before
-{
-    top:6px;
-}
-
-.hamburger-line::after
-{
-    top:-6px;
-}
-
-
-
-/* мобильные устройства */
-@media (max-width: 709px) {
-    .header__menu {
-        margin: 0px 0px 0px 415px;
-    }
-    .menu__link {
-        font-size: 18px;
-    }
-    .menu-item {
-        margin: 0px 21px 0px 0px;
-    
-    }
-    
-    .menu__list
-    {
-        overflow: hidden;
-        position: absolute;
-        right:0;
-        left: 0;
-        transition: all, .5s;
-        visibility: hidden;
-    }
-
-    #checkbox_toggle:checked ~ .menu__list
-    {
-        visibility:visible;
-        margin-top: 31px;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        transition: all, .5s;
-        min-height: 100em;
-        width: 100%;
-        z-index: 1000;
-        background-color: #000 ;
-
-
-    }
-
-
-
-    .hamburger{
-
-        display: block;
-        padding: 20px 0;
-        margin-right: 20px;
-
-    }
-
-    
-
-    #checkbox_toggle:checked ~ .hamburger .hamburger-line
-    {
-       background-color: transparent;
-    }
-
-    #checkbox_toggle:checked ~ .hamburger .hamburger-line::before
-    {
-        transform: rotate(-45deg);
-        top:0;
-    }
-
-    #checkbox_toggle:checked ~ .hamburger .hamburger-line::after
-    {
-        transform: rotate(45deg);
-        top:0;
-    }
-
-}
-
-@media (max-width: 510px) {
-    .header__menu {
-        margin: 0px 0px 0px 215px;
-    }
-
-    .picture-wrapper
-    {
-        width: 30%;
-        margin:0 auto;
-    }
-   
-}
-
-/* --------------------------------------------------------------------------------------------------------- */
-
-/* --------------------------------------------PAGE-------------------------------------------- */
-.page
-{
-    flex: 1 1 auto;
-    background: url(https://wallpapertag.com/wallpaper/full/2/5/8/438278-free-download-black-steel-background-1920x1200-for-ios.jpg) no-repeat;
-    background-size: cover;
-    margin:0;
-}
 
 .main-block__container
 {
@@ -279,73 +5,115 @@ body{
     margin-bottom: 10em;
 }
 
-
-
-p {
-    line-height: 1.5;
+.history_head ,.descr
+{
+    margin-bottom: 30px;
 }
 
-li h3
-{
-    font-size: 20px;
-    line-height: 1.5em;
 
-}
 
-aside img
-{
-    margin-top: 20px;
-    margin-right:20px;
-    float: right;
-    width: 40%;
-    margin-left:50px;
+.year_image_container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-size: 100%;
     border-radius: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* --------------------------------------------------------------------------------------------------------- */
-
-
-
-
-
-
-/* --------------------------------------------Footer------------------------------------------------- */
-.footer{
-    background-color: black;
-    color:inherit;
-    font-family: Montserrat;
-}
-
-.footer_list {
-    display: flex;
+    overflow: hidden;
     flex-wrap: wrap;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
-.footer_list .footer__link
+.year_1947
 {
-    display: block;
-    margin: 25px;
+    background: url(/img/lady.jpg.crdownload) no-repeat;
+}
+.year_1956
+{
+    background: url(/img/iskateli.jpeg) no-repeat;
+}
+
+.year_1972
+{
+    background: url(/img/godfather.png) no-repeat;
+    background-position: center;
+}
+.year_1976
+{
+    background: url(/img/taxi-driver.jpeg) no-repeat;
+    background-position: center;
+}
+
+.year_1983
+{
+    background: url(/img/scarface.jpeg) no-repeat;
+    background-position: center;
+}
+
+.year_1985
+{
+    background: url(/img/bttf.jpg) no-repeat;
+}
+
+.year_1997
+{
+    background: url(/img/titanic.jpg) no-repeat;
+}
+
+
+.year
+{
+    position: absolute;
+    top:10px;
+    z-index: 999;
     color:white;
+    font-weight: bolder;
+    font-size: larger;
 }
 
-.footer_list .footer__link:hover
+.year::before
 {
-    border-bottom: 1px solid;
+    position: absolute;
+    content: '';
+    top:-25px;
+    right:-39px;
+    width: 300%;
+    height:60px;
+    z-index: -1;
+    border-radius: 1em;
+    background-color:rgba(63, 60, 60, 0.352);
 }
 
 
+.year_image_container::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 30, 30, 0.421);
+    transition: all ease-in .3s;
+}
+
+.year_image_container:hover::before 
+{
+    background-color: rgba(20, 19, 19, 0.521);
+}
+
+.year_image_container h2
+{
+    z-index: 2;
+    margin-left:1em;
+}
 
 
-
-
-
+@media (max-width:780px) {
+    .year_image_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+}
