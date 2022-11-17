@@ -36,49 +36,49 @@
 
 .year_1947
 {
-    background: url(/img/lady.png) no-repeat;
+    background: url(.img/lady.png) no-repeat;
     background-position: top left;
 }
 .year_1956
 {
-    background: url(/img/iskateli.jpeg) no-repeat;
+    background: url(img/iskateli.jpeg) no-repeat;
 }
 
 .year_1972
 {
-    background: url(/img/godfather.png) no-repeat;
+    background: url(img/godfather.png) no-repeat;
     background-position: center;
 }
 .year_1976
 {
-    background: url(/img/taxi-driver.jpeg) no-repeat;
+    background: url(img/taxi-driver.jpeg) no-repeat;
     background-position: center;
 }
 
 .year_1983
 {
-    background: url(/img/scarface.jpeg) no-repeat;
+    background: url(img/scarface.jpeg) no-repeat;
     background-position: center;
 }
 
 .year_1985
 {
-    background: url(/img/bttf.jpg) no-repeat;
+    background: url(img/bttf.jpg) no-repeat;
 }
 
 .year_1997
 {
-    background: url(/img/titanic.jpg) no-repeat;
+    background: url(img/titanic.jpg) no-repeat;
 }
 
 .year_2009
 {
-    background: url(/img/avatar.jpg) no-repeat;
+    background: url(img/avatar.jpg) no-repeat;
 }
 
 .year_2019
 {
-    background: url(/img/joker.png) no-repeat;
+    background: url(img/joker.png) no-repeat;
 }
 
 

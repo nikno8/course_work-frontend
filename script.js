@@ -9,8 +9,9 @@ function truncate(str, maxlength)
     return str;
 }
 
-let elements  = document.querySelectorAll(".year_descr");
+let textElements  = document.querySelectorAll(".year_descr");
 
-for (let i = 0; i < elements.length; i++) {
-    elements[i].textContent = truncate(elements[i].textContent, 300);
-  }
+for (let i = 0; i < textElements.length; i++) {
+    textElements[i].textContent = truncate(textElements[i].textContent,150);
+}
+

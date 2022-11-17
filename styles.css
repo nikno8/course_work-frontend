@@ -212,7 +212,7 @@ body{
         text-align: center;
         flex-direction: column;
         transition: all, .5s;
-        min-height:100vh;
+        min-height:20em;
         width: 100%;
         z-index: 99999999999999999999999999999999999999999;
         background-color: #000 ;
@@ -307,10 +307,12 @@ aside img
     margin-top: 20px;
     margin-right:20px;
     float: right;
-    width: 20%;
-    margin-left:50px;
+    width: 15em;
+    height: auto;
+    margin-left:2em;
     border-radius: 20px;
 }
+
 
 
 
@@ -358,7 +360,7 @@ aside img
 
 .cards ul{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
@@ -379,7 +381,7 @@ aside img
 .cards-item h3
 {
     position: absolute;
-    top:0;
+    top:1em;
     opacity: 0;
 }
 
@@ -387,6 +389,8 @@ aside img
 {
     position: absolute;
     top:50%;
+    left: 1em;
+    right: 1em;
     opacity: 0;
 }
 
@@ -451,6 +455,10 @@ aside img
     font-weight: bold;
 }
 
+.cards_header
+{
+    margin-top: 2em;
+}
 
 
 
